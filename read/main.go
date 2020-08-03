@@ -35,5 +35,7 @@ func handle(conn net.Conn){
 		fmt.Println(ln)
 	}
 	defer conn.Close()
+
+	fmt.Println("Code got here!")
 }
 
