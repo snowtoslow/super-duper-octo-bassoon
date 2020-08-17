@@ -44,7 +44,7 @@ func request(conn net.Conn){
 	scanner := bufio.NewScanner(conn)
 	for scanner.Scan() {
 		line := scanner.Text()
-		
+
 		if i == 0 {
 			m := strings.Fields(line)[0] // method
 			u := strings.Fields(line)[1] // uri
